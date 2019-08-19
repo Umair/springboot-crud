@@ -1,7 +1,6 @@
 package com.coffeeshop.demo.controller;
 
 import com.coffeeshop.demo.model.Product;
-import com.coffeeshop.demo.repository.OrderRepository;
 import com.coffeeshop.demo.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
