@@ -1,5 +1,7 @@
 package com.coffeeshop.demo.model;
 
+import org.springframework.data.domain.Pageable;
+
 import javax.persistence.*;
 
 @Entity
@@ -14,6 +16,15 @@ public class Product {
 
     private Double productPrice;
 
+    public Product(){
+
+    }
+
+    public Product(String productName, double productPrice) {
+        this.productName = productName;
+        this.productPrice = productPrice;
+    }
+
     public Long getProductId() {
         return productId;
     }
@@ -22,7 +33,7 @@ public class Product {
         productId = productId;
     }
 
-    public String getProductName() {
+    public String getProductName(){
         return productName;
     }
 

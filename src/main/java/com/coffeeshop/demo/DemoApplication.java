@@ -28,13 +28,8 @@ public class DemoApplication implements CommandLineRunner{
     @Override
     public void run(String... strings) throws Exception {
 
-        Product mocha = new Product();
-        mocha.setProductName("Mocha");
-        mocha.setProductPrice(3.95);
-
-        Product capuccinno = new Product();
-        capuccinno.setProductName("Capuccinno");
-        capuccinno.setProductPrice(4.95);
+        Product mocha = new Product("Mocha",3.95);
+        Product capuccinno = new Product("Capuccinno",4.95);
 
         productRepository.save(mocha);
         productRepository.save(capuccinno);
